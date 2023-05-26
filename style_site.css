@@ -9,7 +9,7 @@
 
 
 body {
-   background-image: url(website_photos/header-background.jpg);
+   background-image: url(./website_photos/header-background.jpg);
     
 }
 header {
@@ -21,7 +21,7 @@ header {
     font-variant: small-caps;
     color: rgb(6, 140, 6);
     padding: 5px;
-    background-image: url(website_photos/header-background.jpg);
+    background-image: url(./website_photos/header-background.jpg);
     box-shadow: 2.5px 2.5px 2.5px 2.5px black;
 }
 .navbar img{
@@ -44,7 +44,7 @@ nav {
     padding: 5px;
     width: 100%;
     margin: auto;
-    background-image: url(website_photos/back-drop.png);
+    background-image: url(./website_photos/back-drop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
@@ -81,7 +81,7 @@ nav a {
 
 nav a:hover {
     font-weight: bold;
-    background-image: url(website_photos/nav-a-icon.jpg);
+    background-image: url(./website_photos/nav-a-icon.jpg);
     background-size: contain;
     text-shadow:2px 2px rgb(6, 140, 6);
     color: black;
