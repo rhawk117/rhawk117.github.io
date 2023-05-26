@@ -1,0 +1,53 @@
+.heading {
+    font-family: 'Bruno Ace SC', cursive;
+    font-weight: lighter;
+    font-size: 40px;
+    text-shadow: 2px 2px;
+    color: rgb(6, 140, 6) ;
+ }
+ .subheading {
+    font-family: 'Merriweather', serif;
+    color: rgb(6, 140, 6);
+    line-height: 30px;
+    font-style: italic;
+ }
+ .styleP {
+    font-size: medium;
+    color: rgb(6, 140, 6);
+    text-indent: 30px;
+    line-height: 40px;
+ }
+ main ul p {
+    color: rgb(92, 88, 88);
+    text-indent: 40px;
+    list-style: none;
+ }
+ main ul li a {
+    color:rgb(6, 140, 6) ;
+    font-style: italic;
+    text-decoration: none;
+    transition: all 1s ease;
+ }
+ main ul li a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
+ }
+
+ .contnt {
+    clear: right;
+ }
+ .contnt img {
+    float: right;
+    width: 300px;
+    transition: all 1s ease;
+ }
+ .img-container {
+  
+ }
+ .img-container img:hover {
+    transform: scale(1.05);
+ }
+ .img-container img:last-of-type {
+    width: 250px;
+    height: 300px;
+ }
