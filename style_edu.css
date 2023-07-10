@@ -1,0 +1,40 @@
+.edu-level {
+    background-image: url(website_photos/new-resume-backdrop.jpg);
+    background-size: cover;
+    border: 5px solid rgb(3, 51, 3);
+    border-radius: 15px;
+    margin: 25px;
+    margin-top: none;
+    padding: 10px;
+    color:rgb(14, 129, 14);
+    line-height: 35px;
+    font-family: 'Merriweather', serif;
+    font-size: small;
+}
+.edu-level ul {
+    list-style: none;
+}
+.headng {
+    font-weight: 800;
+    color:rgb(14, 129, 14);
+    font-family: 'Bruno Ace SC', cursive;
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 2px 2px rgb(64, 67, 64);
+}
+.bckgrnd {
+    font-family: 'Bruno Ace SC', cursive ;
+    font-size: medium;
+    font-style: italic;
+    text-shadow: 2px 2px rgb(3, 51, 3);
+}
+.rel-field {
+    font-size: medium;
+    transition: all 1s ease ;
+}
+.rel-field li::before {
+    content: "🗹";
+}
+.rel-field ul li:hover {
+    color: yellow;
+}
