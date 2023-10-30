@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Josefin+Sans&family=Merriweather:wght@300&family=Poppins:wght@500&display=swap');
+
+
+#wrapper {
+    margin: auto;
+    max-width: 980px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10%;
+    height: fit-content;
+}
+body {
+    background-image: url(../images/bdrop.png);
+    
+}
+
+/* Header Section */
+
+header {
+    background-color: rgb(7, 7, 7);
+    background-image: url(../images/shard-wp.jpg) ;
+    width: 100%;
+    height: 125px;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 20px;
+    border-radius: 10%;
+}
+.contain {
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    width: 100%;
+    font-weight: lighter;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+    color: rgb(69, 161, 12);
+    padding: 5px;
+}
+.contain span {
+    font-family: 'Poppins', sans-serif;
+    font-weight:600;
+    font-size: large;
+    text-align: center;
+    color: rgb(251, 253, 249);
+}
+.contain h1 {
+    color: aliceblue;
+    font-size:x-large;
+    text-align: center;
+}
+.hold-profile img {
+    border-radius: 50%;
+    width: 80px;
+    position: relative;
+    bottom: 105px;
+    float: right;
+    border: 2px solid rgb(248, 250, 248);
+}
+
+/* Nav Section */
+
+nav {
+    position: relative;
+    left: -2px;
+    width: 101.5%;
+    bottom: 40px;
+    z-index: 1;
+    transition: all 1s ease-in;
+    text-align: center;
+    
+}
+
+.container {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(0, 0, 0);
+    transition: 1s ease-out;
+    box-sizing: content-box;
+    background-image: url(../images/nav.png);
+    padding: 20px;
+    border-radius: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nav-items li {
+    list-style: none;
+    display: inline-block;
+    font-size: large;
+    text-align: center;
+    transition: .5s ease-out;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20%;
+}
+.nav-items li:hover a:hover {
+    transform: scale(1.15);
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(6, 7, 6);
+    opacity: 80;
+    border-radius: 20%;
+}
+.nav-items li a {
+    color: rgb(250, 251, 250);
+    display: block;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 5px;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+.nav-items li i {
+    width: 40px;
+    text-align: center;
+}
+
+/* Main Section */
+main {
+    background-color: rgb(16, 16, 15);
+    padding: auto;
+    position: relative;
+    background-repeat: none;
+    background-size: contain;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    width: 101.5%;
+    bottom: 75px;
+    margin: auto;
+    z-index: 2;
+}
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 40px;
+    
+}
+.welc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-variant: small-caps;
+    transition: all .3s ease;
+}
+.start {
+    background-image: url(../images/welc-bdrop.png);
+    background-size: contain;
+    border-radius: 15%;
+    transition: all .3s ease-out;
+    top: 100px;
+}
+.start:hover {
+    box-shadow: 2.5px 2.5px 2.5px 2.5px#f7f7f7;
+    transform: scale(1.05);
+    overflow: hidden;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+.item {
+    background-color: rgba(15, 13, 13, 0.8);
+    border: 2.5px solid rgba(0, 0, 0, 0.8);
+    padding: 7.5px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 24%;
+    font-size: 30px;
+    text-align: center;
+    transition: all .3s ease;
+}
+.item a {
+    text-decoration: none;
+}
+.item:hover {
+    transform: scale(1.15);
+    background-color: white;
+    border: 2.5px solid black;
+}
+.item:hover p {
+    color: black;
+}
+.arrow {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
+    
+}
+.arrow a {
+    text-decoration: none;
+}
+.arrow i {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+.subheading {
+    color: rgb(243, 247, 243);
+    line-height: 30px;
+    font-size: 21px ;
+}
+.styleP {
+    font-size: large;
+    font-weight: normal;
+    color: rgb(243, 245, 243);
+    text-indent: 30px;
+    line-height: 40px;
+}
+.desc {
+    color: rgb(247, 239, 239);
+    text-indent: 0px;
+    font-size: large;
+}
+.desc a {
+    color: rgb(6, 140, 6);
+    font-style: italic;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+.desc a:hover {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+.gallery figure {
+    display: inline;
+    float: right;
+    width: 25%;
+}
+.image {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+}
+.vista {
+    float: right;
+    margin-right: 10px;
+}
+
+.lock {
+    float: left;
+}
+.bid-day {
+    float: left;
+}
+.bid-day1 {
+    float: right;
+}
+/* Footer Section */
+@import url('https://fonts.googleapis.com/css2?family=Sometype+Mono:wght@600&display=swap');
+footer {
+    background-color: black;
+    color: white;
+    width: 65%;
+    left: 250px;
+    position: relative;
+    bottom: 120px;
+    border-radius: 30%;
+    text-align: center;
+    padding: 20px;
+    z-index: 2;
+    
+}
+.f-grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+}
+.f-grid-item {
+    background-color: rgba(15, 13, 13, 0.8);
+    border: 2.5px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    transition: all .3s ease;
+}
+.f-grid-item a {
+    text-decoration: none;
+}
+
+.f-grid-item:hover {
+    transform: scale(1.15);
+    color: black;
+    background-color: rgb(37, 37, 37);
+    border: 2.5px solid black;
+}
+
+

@@ -1,0 +1,44 @@
+.hold-skills-grid {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+}
+.skill {
+    padding: 25px;
+    margin: auto;
+    background-image: url(../images/skill-bg.png);
+    color: white;
+    border-radius: 10%;
+    border-bottom: 15px groove rgb(0, 0, 0);
+    background-size: cover;
+    transition: all 1s ease;
+    clear: right;
+}
+.skill:hover {
+    transform: scale(1.05);
+    box-shadow: 10px lightslategray;
+    border: 1px solid white;
+}
+.skill-title {
+    font-weight: bold;
+    font-size: xx-large;
+    font-variant: small-caps;
+    border-radius: 20%;
+}
+.skill-desc {
+    font-weight: lighter;
+    text-align: left;
+    text-indent: 10px;
+
+}
+.skill-image img {
+    float: right;
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: black;
+    margin: 0px 15px 0px 0px;
+    border-radius: 50%;
+    width: 25%;
+}

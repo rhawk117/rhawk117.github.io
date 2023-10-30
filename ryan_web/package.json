@@ -1,0 +1,19 @@
+{
+  "name": "ryan_web",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rhawk117"
+  },
+  "keywords": [
+    "cyber",
+    "security"
+  ],
+  "author": "Ryan Hawkins",
+  "license": "ISC"
+}
