@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Ryan Hawkins - Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../public/css/images/web_icon.png">
+    <meta name="keywords" content="HTML, CSS, rhawk117, Python, C#, Coding, Cyber Seucrity">
+    <meta name="author" content="Ryan Hawkins">
+    <link rel="stylesheet" href="../../../public/css/styles/style.css">
+    <link rel="stylesheet" href="../../../public/css/styles/blog_entry.css">
+</head>
+
+<body class="view">
+    <div id="wrapper">
+        <header class="contain">
+            <section alt="header elements">
+                <h1>Ryan Hawkins<br> WEBP Image Converter <br>
+                    <i class="fa-solid fa-newspaper"></i></i>
+                </h1>
+                <div class="hold-profile">
+                    <img src="../../../public/css/images/profile-shot.png" alt="Professional Photo">
+                </div>
+            </section>
+        </header>
+        <nav>
+            <section alt="nav bar">
+                <ul class="nav-items container">
+                    <li><a href="../../index.html"><i class="fa-solid fa-house"></i>Home </a></li>
+                    <li><a href="../../skills.html"><i class="fa-solid fa-circle-info"></i>Skills </a></li>
+                    <li><a href="../../education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+                    <li><a href="../../contact.html"><i class="fa-solid fa-address-card"></i>Contact </a></li>
+                    <li><a href="../../blog.html"><i class="fa-solid fa-newspaper"></i>Blog </a></li>
+                </ul>
+            </section>
+        </nav>
+        <main>
+            <div class="title">
+                <span class="heading blog-title">
+                    Automating WEBP Image Conversion With Python<i class="fa-brands fa-python"></i><br>
+                </span>
+                <ul class="glossary">
+                    <li class="entry">
+                        <a href="#intro">
+                            Background
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#readme">
+                            Read Me
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="" id="get_input">
+                            Input Validation
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#try_req">
+                            Validating Input
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#process_request">
+                            Processing Requests
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#dl_img">
+                            Downloading Image
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#checkfilename">
+                            Validating File Names
+                        </a>
+                    </li>
+                    <li class="entry">
+                        <a href="#conclude">
+                            Finishing Touches
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="content">
+                <span class="heading" id="intro">
+                    Background
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        <i>
+                            One of the most notorious and hated image formats on the Internet undoubtedly has to be WEBP format and for good reason.
+                            The image format originally developed by Google back in 2010 at a glance seems to be better than the alternative image
+                            formats considering that it offers better image compression rates than JPGs and supports transparency like PNGs do.
+                            Despite this though, anyone who has had the experience of working with a WEBP image will tell you just how annoying they
+                            are. These grievances with the image format stem from WEBP being unsupported by most software and browsers.
+                            Additionally, not too long ago there was an unpatched vulnerability in WEBP images that allowed hackers to run code
+                            embedded in WEBP images. Considering the security nightmare and headache caused by this image format; almost no one
+                            wants to use the image format or is comfortable downloading a WEBP image. This forces you to convert any WEBP image you
+                            find into a different image format whenever encounter it online which can be tedious and time-consuming. However, with
+                            the help of a simple Python script I created, you can now autonomously and comfortably perform this task the next time
+                            you encounter a WEBP image.
+                        </i>
+                    </p>
+                    <img src="images/webp-image.png" alt="Blog Post Thumbnail">
+                    <p class="styleP">
+                        The script I’ve made works by prompting the user for an image address which we use in a query to a website that will
+                        convert the image for us; ezgif.com. After making the query to the image converter, the script uses Selenium to
+                        autonomously find the converted image address on the site to then download it. If you’d like to try the script yourself
+                        visit the GitHub Repo below and to learn more about the script and its features visit the YouTube video I made about it.
+                        However, before downloading and trying the program yourself please view the Read Me section below which discusses and
+                        lists all of the script’s dependencies.
+                    </p>
+                    <div class="gh-link">
+                        <a href="https://github.com/rhawk117/WEBP-to-JPG-PNG-Image-Converter" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            View Source Code On GitHub
+                        </a>
+                    </div>
+                    <br>
+                    <div class="gh-link">
+                        <a href="https://www.youtube.com/watch?v=RPi7S-uGnPk&t=159s" target="_blank">
+                            <i class="fa-brands fa-youtube" style="color: #e11414;"></i>
+                            View YouTube Video
+                        </a>
+                    </div>
+                </div>
+
+                <span class="heading" id="readme">
+                    Read Me
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        Before downloading and using the program yourself ensure that you’ve downloaded all of the script’s dependencies and 3rd
+                        party modules it uses. First and foremost, this script uses the Selenium web driver to autonomously find the converted
+                        image address. Ensure that you have a modern version of Selenium installed and also the web driver installed. The
+                        process of setting up Selenium can be very tedious and confusing as such if this is your first time doing so, I’d highly
+                        encourage you to watch the following YouTube video to walk you through the process. Additionally, the script also uses
+                        the requests module which is also a third-party module that you’ll have to install yourself if you haven’t done so
+                        already. The rest of the modules/libraries used by the program should already be installed however if they are not
+                        referencing the image below use pip to install it yourself.
+                    </p>
+                    <div class="code">
+                        <img src="images/imports.png" alt="">
+                    </div>
+                    <p class="styleP">
+                        <i>
+                            NOTE: In order for the script to work properly, you must have a 'logs' and 'output'
+                            directory where the .py
+                            file / script is located. The program should do this for you and create these directories
+                            automatically whenever it runs
+                            for the first time however if any issues do occur, manually create
+                            these directories yourself.
+                        </i>
+                    </p>
+                    <p class="styleP">
+                        With the program’s dependencies out of the way let’s talk about the code itself along with all of the tasks we need to
+                        perform which are separated into functions. If you’d like a more in-depth or detailed explanation visit the YouTube
+                        video I made about the script.
+                    </p>
+                </div>
+
+                <!-- left off here, need 2 update glossary and images and make entry on blog.html -->
+                <span class="heading" id="get_input">
+                    GetInput Function - Input Validation
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        The first task our program needs to perform is to validate user input which we can do quite easily with a simple
+                        recursive function that will call itself until a user provides input that is a part of the options list supplied in the
+                        function’s parameter. This allows us to broadly perform input validation anytime we need to receive input from our user.
+                    </p>
+                    <div class="code">
+                        <img src="images/get_input.png" alt="Recursive Input Validation Code">
+                    </div>
+                    <br>
+                </div>
+
+                <span class="heading" id="try_req">
+                    Try_Request - Image Address Validation
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        The next task our program needs to perform upon receiving an image address from our users is ensuring that they provide
+                        a valid URL. I opted to avoid checking whether or not the URL itself is an image address and also whether or not the
+                        image address leads to a WEBP image to shorten this step. Now if we wanted to do that I could’ve simply imported
+                        BeautifulSoup to parse the image address and check the extension of the image, however in order to improve the
+                        performance of our script I opted to not include further URL validation. The primary way we perform URL validation is by
+                        sending a GET request to the image address and then attempting to raise the response for status and lastly checking the
+                        status code of our request. If any exceptions are raised during this process or the status code is anything aside from
+                        200 we return false which will signal the while loop in the main routine to continue.
+                    </p>
+                    <div class="code">
+                        <img src="images/try_req.png" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <span class="heading" id="process_request">
+                    Process Request - Script Core Logic 
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        Before we discuss the process_request function which performs the core logic of our program let’s get some much-needed
+                        context about the website we are using to convert images, ezgif, and the Selenium web driver.
+                    </p>
+                    <div class="code">
+                        <img src="images/ezgif.png" alt="">
+                    </div>
+                    <p class="styleP">
+                        Anytime you’d like to convert an image, ezgif prompts you to enter either an image address or asks you to upload a file
+                        to convert. However, fortunately for us, ezgif gives us the option of just simply entering the following URL
+                        https://ezgif.com/jpg-to-webp?url=<img_address_here> instead of having to manually enter the image address URL on the
+                        website ourselves. We can use this URL and the image address we receive from our user to autonomously generate the
+                        URL that submits the image automatically.
+                    </p>
+                    <div class="code">
+                        <img src="images/url.png" alt="">
+                    </div>
+                    <p class="styleP">
+                        This URL ezgif provides is solely what makes the script possible and more importantly faster than doing the process
+                        ourselves. This may sound trivial and dramatic to those unfamiliar with the Selenium web driver however, Selenium is
+                        notorious for being very inherently slow not to mention that anytime we load a website we have to tell the web driver to
+                        pause a few seconds to allow the page to load.
+                    </p>
+                    <div class="code">
+                        <img src="images/convert2.png" alt="">
+                    </div>
+                    <p class="styleP">
+                        Now after entering the URL to process the request, we aren’t done yet as upon visiting the URL we have to click a button
+                        before the converted image is viewable. As such we need our web driver to click this button so that we can then grab the
+                        converted images address. Upon clicking this button, we can finally grab the image address after a 5-second delay we’ll
+                        impose on the web driver while the site loads. We’ll then return the src attribute in the converted images < img > HTML
+                        tag to fetch the image address which we’ll then return to main for further processing. 
+                    </p>
+                    <div class="code">
+                        <img src="images/process_req.png" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <span class="heading" id="dl_img">
+                    Download_Img - Downloading Converted Image
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        With the image address returned from process_requests, we can finally download the converted image. We’ll do this by
+                        sending a GET request to the image address URL supplied in our parameter and then opening the converted output image
+                        file where we’ll then write the converted images binary to the output file. If this process is successful, we return
+                        True, otherwise, we inform the user that we failed to download the image and also provide the converted image URL
+                        address to allow them to download the image themselves and then return False.
+                    </p>
+                    <div class="code">
+                        <img src="images/dl_img.png" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <span class="heading" id="ParseLib">
+                    Check_file_name - Validating Output File Name 
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        Similar to the previous script using custom JSON presets we’ll need a file name from our user in order to create the
+                        output image file which we’ll prompt them for. After we receive the desired file name from our user, we’ll pass the
+                        input into our file name parameter where we’ll then perform a series of checks to ensure that the file name provided is
+                        valid. We’ll return True if the file name in question passes all of our checks and False if it falls any of the checks.
+                    </p>
+                    <div class="code">
+                        <img src="images/check_file_name.png" alt="">
+                    </div>
+                    <br>
+                </div>
+
+                <span class="heading" id="conclude">
+                    Concluscion
+                </span>
+                <div class="media">
+                    <p class="styleP">
+                        Now that we have successfully created functions for all of the tasks for our program all that's
+                        left is putting the
+                        pieces together in the main routine. To avoid this already long blog post from being even longer
+                        and to entice anyone
+                        who's made it this far into watching the YouTube video I made about the script, I decided to
+                        leave out the explanation of the
+                        main routine. You can view the video explanation yourself below if you'd like a more in depth
+                        look at the script, but with that
+                        being said I'd like to thank you for taking the time to read this blog post and hope you learned
+                        something new today. Until next
+                        time.
+                    </p>
+                    <div class="gh-link">
+                        <a href="https://www.youtube.com/watch?v=J1ppAxMb_bA" target="_blank">
+                            <i class="fa-brands fa-youtube" style="color: #e11414;"></i>
+                            View YouTube Video
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
